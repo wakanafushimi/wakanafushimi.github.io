@@ -1,0 +1,276 @@
+html{
+  scroll-behavior: smooth;
+}
+/*背景画像*/
+.background{
+  background-image:url(../images/10000011.JPG);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  position:absolute;
+  top:0;
+  width:98.5vw;
+}
+
+/*ヘッダー*/
+header{
+  background-image:url(../images/10000011.JPG);
+  background-size:cover;
+  width:98.5vw;
+  height:110px;
+  position:relative;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+@media(min-height:700px){
+  header{
+    height:300px;
+    width:100vw;
+    position:sticky;
+    top:-150px;
+  }
+}
+
+header h1{
+  color:#fff;
+  font-size:50px;
+  position:absolute;
+  top:40px;
+  left:40px;
+}
+@media(min-height:700px){
+  header h1{
+    display:inline-block;
+    font-size:105px;
+    padding:0;
+    position:sticky;
+    top:16px;
+    left:70px;
+    background:rgba(204,204,204,.7);
+  }
+}
+
+header h2{
+  color:#fff;
+  font-size:27px;
+  position:absolute;
+  top:73px;
+  right:176px;
+}
+@media(min-height:700px){
+  header h2{
+    display:inline-block;
+    padding:0;
+    position:sticky;
+    top:85px;
+    right:100px;
+    font-size:50px;
+  }
+}
+
+/*全体*/
+.wrapper{
+  display:flex;
+  flex-direction:row-reverse;
+  background:rgba(255,255,255,.8);
+  margin:0 45px 45px 45px;
+}
+@media(min-height:700px){
+  .wrapper{
+    margin:0;
+    display:block;
+    padding:0;
+  }
+}
+.main{
+  width:93vw;
+}
+@media(min-height:700px){
+  .main{
+    width:100vw;
+  }
+}
+.paragragh{
+  padding:160px 30px 30px 30px;
+  margin:-120px 30px 0 30px;
+}
+.title{
+  font-size:27px;
+  border-bottom:rgba(127,106,98,.5) 2px solid;
+}
+h4{
+  font-size:23px;
+  font-family: 'DM Serif Display', serif;
+  color:#7f6a62;
+}
+.statement{
+  padding:10px 20px;
+  line-height:35px;
+  font-size:15px;
+}
+
+/*index*/
+.index{
+  width:30vw;
+  height:420px;
+  font-size:15px;
+  line-height:40px;
+  position:sticky;
+  top:126px;
+  box-shadow:-2px 2px 2px 2px rgba(127,106,98,.5);
+  margin:15px;
+  border-radius:2%;
+}
+@madia(min-height:700px){
+  .index{
+    margin-top:0;
+    display:block;
+    position:static;
+    width:80vw;
+    height:100px;
+  }
+}
+.index h4{
+  padding-left:20px;
+}
+.index li{
+  padding-left:40px;
+}
+.reason{
+  cursor:pointer;
+}
+.reasonSub{
+  display:none;
+  color:#41727c;
+  padding:0 10px 0 15px;
+  line-height:20px;
+}
+.scrollup{
+  display:block;
+  position:absolute;
+  right:30px;
+  bottom:20px;
+  font-size:70px;
+  color:#7f6a62;
+}
+
+/*プロフィール*/
+.profile{
+  margin-top:30px;
+  padding-top:0;
+}
+.profile h4{
+  margin:20px 0 0 15px;
+}
+.basic,.sequence{
+  font-size:13px;
+}
+.basic{
+  margin:16px 0 0 30px;
+}
+.basic th{
+  width:112px;
+  vertical-align:middle;
+}
+.basic td{
+  width:190px;
+  vertical-align:middle;
+}
+.basic tr{
+  height:23px;
+  border-bottom:1px solid #7f6a62;
+}
+.sequence{
+  margin-left:30px;
+}
+.sequence th{
+  width:90px;
+  padding-right:5px;
+}
+.sequence td{
+  width:500px;
+  padding-left:15px;
+  border-left:solid 1px #7f6a62;
+}
+.sequence tr{
+  height:27px;
+}
+.sequenceSta{
+  display:none;
+  padding:10px 0;
+}
+.hi,.uni{
+  cursor:pointer;
+}
+
+/*仕事内容*/
+.job{
+  display:flex;
+  position:relative;
+}
+.circle{
+  width:369px;
+  height:218px;
+  border-radius:50%;
+  border:2px #c4b8b3 solid;
+  margin:20px 0 0 60px;
+}
+.job span{
+  font-size:20px;
+}
+.job:not(span){
+  font-size:5px;
+}
+.container{
+  padding:10px;
+}
+.assist{
+  position:absolute;
+  top:30px;
+  left:10px;
+}
+.management{
+  position:absolute;
+  top:138px;
+  left:134px;
+  width:420px
+}
+.care{
+  position:absolute;
+  top:11px;
+  left:213px;
+  width:160px;
+}
+.timeline{
+  line-height:20px;
+  margin:62px 0;
+}
+.timeline p,.meaning p{
+  font-size:20px;
+}
+.timeline th{
+  vertical-align:top;
+  text-align:right;
+}
+.timeline td{
+  padding:15px;
+  vertical-align:middle;
+  font-size:15px;
+}
+.timeline tr{
+  border-top:1px solid #c4b8b3;
+}
+.noon::before{
+  font-family:"Font Awesome 6 Free";
+  font-weight:900;
+  content:"\f185";
+}
+
+/*得たもの*/
+.whatIGot span,.whySE span{
+  display:inline-block;
+  border-bottom:2px solid rgba(65,114,124,.6);
+  font-size:20px;
+  padding-top:20px;
+}
